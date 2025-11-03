@@ -9,6 +9,15 @@
   background-color: bisque;
 }
 
+/* to clear out blue color and underline from hyperlinks, use this class. */
+.clean{
+  color: inherit;
+  text-decoration: none;
+}
+.clean:hover{
+  text-decoration: none;
+}
+
 #question,#option{
   width: 15rem;
   height: 2rem;
