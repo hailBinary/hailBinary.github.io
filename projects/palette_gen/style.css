@@ -1,0 +1,46 @@
+/* Element styles */
+.centered {
+  text-align: center;
+}
+
+/* Class selectors */
+.row {
+  display: flex;
+  gap: 1rem;
+  width: 100%;
+  padding: 2rem;
+  box-sizing: border-box;
+}
+
+.row > div {
+  flex: 1 1 0;
+  height: 34rem;
+  font-size: 2rem;
+  font-weight: lighter;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 10px;
+  transition: transform 200ms ease;
+  cursor: pointer;
+}
+
+/* State */
+.clicked {
+  transform: scale(1.04);
+}
+
+/* ID selectors */
+#color_gen {
+  display: block;
+  width: 15rem;
+  height: 3rem;
+  margin: 0 auto;
+  border-radius: 12px;
+  font-size: large;
+  background-color: gray;
+  cursor: pointer;
+  user-select: none;
+  border: none;
+  color: white;
+}

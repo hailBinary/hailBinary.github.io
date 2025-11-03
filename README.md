@@ -1,14 +1,17 @@
-## Pranil Dhakal's Personal Site
+# Pranil Dhakal's Personal Site
 
-Welcome to my personal site! This is where I showcase my projects and other content.  
-It serves as a portfolio of my work and a space to share what I’m building and learning.
+Welcome! This is my personal portfolio where I showcase my work and share insights from my learning journey.
 
+## About
 
-### Contact
+I'm a computer engineer passionate about creating intelligent and visually appealing software. This site serves as a platform to present my projects and document what I build and learn.
 
-📧 pranil.dhakal31@gmail.com
+## Contact
+
+Feel free to reach out via email:  
+📧 [pranil.dhakal31@gmail.com](mailto:pranil.dhakal31@gmail.com)
 
 ---
 
-> This site is maintained using GitHub Pages and is continuously updated.  
-> Pranil Dhakal, Nepal
+> This site is hosted on GitHub Pages and updated continuously.  
+> — Pranil Dhakal, Nepal

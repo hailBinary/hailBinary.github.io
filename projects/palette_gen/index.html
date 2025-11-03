@@ -5,10 +5,11 @@
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <link rel="stylesheet" href="../../style.css" />
-  <title>Pranil Builds - urlXtractor</title>
+  <link rel="stylesheet" href="style.css">
+  <title>Pranil Builds - palette_gen</title>
 </head>
 
-<body>
+<body id="body">
   <header>
     <h1 class="title">
       <a href="../../index.html" class="clean">Pranil Dhakal Builds👻</a>
@@ -19,17 +20,18 @@
     </h1>
     <hr>
   </header>
-  <div id="main_part">
-    <h2>urlXtractor</h2>
-    <form id="the_form">
-      <textarea name="messages" id="messages" rows="5" cols="30"
-        placeholder="Add your URL here. Press enter after each URL. eg: https://keep.google.com/u/0/"></textarea>
-      <br />
-      <input type="submit" value="submit" />
-    </form>
-    <ul id="the_list"></ul>
-    <script src="main.js"></script>
+  <h2 class="centered">Five Tone - Palette Generator</h2>
+  <p class="centered">Click on a color to copy it's hex code to your clipboard.</p>
+  <input type="button" value="Generate Palette" id="color_gen">
+  <div class="row">
+    <div></div>
+    <div></div>
+    <div></div>
+    <div></div>
+    <div></div>
   </div>
+
+  <script src="main.js"></script>
 </body>
 
 </html>

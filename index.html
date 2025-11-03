@@ -2,87 +2,90 @@
 <html lang="en">
 
 <head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <link rel="stylesheet" href="style.css" />
-  <title>Pranil Dhakal</title>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Pranil Dhakal - Computer Engineer showcasing projects and builds">
+  <meta name="author" content="Pranil Dhakal">
+  <title>Pranil Dhakal - Portfolio</title>
+  <link rel="stylesheet" href="style.css">
 </head>
 
 <body>
-  <h1 class="title">Pranil Dhakal👻</h1>
-  <hr />
-  <p>
-    &nbsp;I'm a computer engineer or at least that's what I studied in
-    college. I like building things that look cool and show intelligence.
-  </p>
-  <p>
-    &nbsp;I'll showcase the projects I build here along with any other stuff.
-  </p>
-  <br />
-  <h3>Some of my builds,</h3>
-  <ol>
-    <li>
-      <p>
-        <a href="./projects/poll_maker/index.htm">poll_maker</a><br />Make a poll where you can manually add in your own options and the poll count rises when you click on the option.
-      </p>
-    </li>
-    <li>
-      <p>
-        <a href="./projects/url extractor/index.html">urlXtractor</a><br />Manually type in your URL separated by a line
-        break and it will
-        turn it into a list of clickable links. I learned to manipulate the
-        DOM using JS from this project.
-      </p>
-    </li>
-    <li>
-      <p>
-        <a href="./projects/BGcolorchange/index.htm">BGcolorchanger</a><br />Change background color by typing the color
-        name as input. I
-        learned to change css using JS from this project.
-      </p>
-    </li>
-  </ol>
+  <header>
+    <h1 class="title">
+      Pranil Dhakal 👻
+      <a href="mailto:pranil.dhakal31@gmail.com?subject=Hello%20Pranil&body=Hi%20Pranil,%0D%0A%0D%0AI%20wanted%20to%20reach%20out%20to%20you%20regarding..."
+        id="contact" aria-label="Send email to Pranil Dhakal">
+        pranil.dhakal31@gmail.com
+      </a>
+    </h1>
+    <hr>
+  </header>
 
-  <h3>Projects I made in college,</h3>
-  <ol>
-    <li>
-      <p>
-        <a href="https://github.com/hailBinary/VisioAlgo">Visioalgo: A path finding and sorting visualiser</a>
-        <br />
-        Me and my friends made a pathfinding, djikstra and a*, and sorting,
-        bubble and merge sort, algorithm visulaiser for our college project.
-      </p>
-    </li>
-    <li>
-      <p>
-        <a href="https://github.com/hailBinary/Self-DrivingCar">Self-DrivingCar Simulation</a>
-        <br />
-        Made this one in pure javascript. A self driving car simulation
-        operates on a feed forward neural net. The neural net saves the car
-        that goes the farthest among many cars with slight variations and then
-        uses the winning car to build the next generation of cars and so on.
-        Was fun to build.
-      </p>
-    </li>
-    <li>
-      <p>
-        <a href="https://github.com/hailBinary/GrabBag">GrabBag</a>
-        <br />
-        A clickable quiz game I made using p5.js for my college quiz game.
-        There are 4 * 4 boxes and only 7 of them are correct. Click on the
-        correct ones to win points.
-      </p>
-    </li>
-    <li>
-      <p>
-        RL enemy bots in an FPS shooter game
-        <br />
-        My final thesis for my undergraduate where we trained enemy bots using
-        RL in unity for an fps shooter games. The bots showed intelligent
-        behavior better than traditional bots.
-      </p>
-    </li>
-  </ol>
+  <main>
+    <section aria-labelledby="intro">
+      <h2 id="intro" class="visually-hidden">Introduction</h2>
+      <p>I'm a computer engineer—or at least that's what I studied in college. I enjoy building things that look cool
+        and showcase intelligence.</p>
+      <p>Here, I showcase my projects along with other interesting stuff.</p>
+    </section>
+
+    <section aria-labelledby="personal-projects">
+      <h3 id="personal-projects">Some of my builds</h3>
+      <ol>
+        <li>
+          <a href="./projects/palette_gen/index.html">Five Tone - Palette Generator</a>
+          <time datetime="2025-11-02" class="project-date">[ 2025-11-02 ]</time>
+          <p>Generate a color palette of 5 random colors with a click. Click any color to copy its hex code to your
+            clipboard.</p>
+        </li>
+        <li>
+          <a href="./projects/poll_maker/index.htm">Poll Maker</a>
+          <time datetime="2025-10-29" class="project-date">[ 2025-10-29 ]</time>
+          <p>Create polls by adding custom options. Click an option to increase its vote count.</p>
+        </li>
+        <li>
+          <a href="./projects/url%20extractor/index.html">urlXtractor</a>
+          <time datetime="2025-10-31" class="project-date">[ 2025-10-31 ]</time>
+          <p>Input URLs separated by line breaks, and convert them into a clickable list. Learned DOM manipulation with
+            this project.</p>
+        </li>
+        <li>
+          <a href="./projects/BGcolorchange/index.htm">BGcolorchanger</a>
+          <time datetime="2025-10-27" class="project-date">[ 2025-10-27 ]</time>
+          <p>Change background colors by typing the color name. This project taught me how to manipulate CSS using
+            JavaScript.</p>
+        </li>
+      </ol>
+    </section>
+
+    <section aria-labelledby="college-projects">
+      <h3 id="college-projects">College Projects</h3>
+      <ol>
+        <li>
+          <a href="https://github.com/hailBinary/VisioAlgo" target="_blank" rel="noopener noreferrer">Visioalgo:
+            Pathfinding and Sorting Visualizer</a>
+          <p>Developed with friends, this visualizer demonstrates pathfinding algorithms like Dijkstra's and A*, and
+            sorting algorithms such as bubble and merge sort.</p>
+        </li>
+        <li>
+          <a href="https://github.com/hailBinary/Self-DrivingCar" target="_blank" rel="noopener noreferrer">Self-Driving
+            Car Simulation</a>
+          <p>Built in pure JavaScript, this sim uses a feed-forward neural net to train cars to drive autonomously
+            through generations.</p>
+        </li>
+        <li>
+          <a href="https://github.com/hailBinary/GrabBag" target="_blank" rel="noopener noreferrer">GrabBag</a>
+          <p>A quiz game made with p5.js featuring a 4x4 grid with hidden correct boxes to click for points.</p>
+        </li>
+        <li>
+          RL enemy bots in an FPS shooter game
+          <p>My undergraduate thesis focused on training enemy bots with reinforcement learning in Unity, resulting in
+            more intelligent gameplay behavior.</p>
+        </li>
+      </ol>
+    </section>
+  </main>
 </body>
 
 </html>
