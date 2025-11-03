@@ -1,25 +1,36 @@
-const form = document.getElementById("the_form");
-const message = document.getElementById("messages");
-const list = document.getElementById("the_list");
+const linksForm = document.getElementById("the_form");
+const linksTextarea = document.getElementById("messages");
+const linksList = document.getElementById("the_list");
 
-form.addEventListener("submit", (e) => {
-  e.preventDefault();
-  list.innerHTML = "";
-  const list_items = message.value.split(/\r?\n/);
-  for (let item of list_items) {
-    const li = document.createElement("li");
-    const url = document.createElement("a");
-    url.href = url.href =
-      item.startsWith("http://") || item.startsWith("https://")
-        ? item
-        : `https://${item}`;
+linksForm.addEventListener("submit", (event) => {
+  event.preventDefault();
 
-    url.target = "_blank"; //opens in a new tab
+  // Clear existing list items
+  linksList.innerHTML = "";
 
-    const match = item.match(/https?:\/\/(?:www\.)?(.*?)\.[a-z]+/i);
-    url.textContent = match ? match[1] : item.replace(/^www\./, "");
+  // Split textarea input by new lines
+  const lines = linksTextarea.value.split(/\r?\n/);
 
-    li.appendChild(url);
-    list.appendChild(li);
-  }
+  lines.forEach((line) => {
+    // Create list item and anchor elements
+    const listItem = document.createElement("li");
+    const anchor = document.createElement("a");
+
+    // Ensure URL starts with protocol
+    const url = 
+      line.startsWith("http://") || line.startsWith("https://")
+        ? line
+        : `https://${line}`;
+
+    anchor.href = url;
+    anchor.target = "_blank"; // Open in new tab
+
+    // Extract domain name for anchor text or fallback to cleaned input
+    const domainMatch = line.match(/https?:\/\/(?:www\.)?(.*?)\.[a-z]+/i);
+    anchor.textContent = domainMatch ? domainMatch[1] : line.replace(/^www\./, "");
+
+    // Append anchor to list item, then list item to list
+    listItem.appendChild(anchor);
+    linksList.appendChild(listItem);
+  });
 });

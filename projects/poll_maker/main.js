@@ -1,16 +1,36 @@
-console.log("js is running")
+const questionInput = document.getElementById("question");
+const optionInput = document.getElementById("option");
+const addOptionBtn = document.getElementById("add_option");
+const questionDisplay = document.getElementById("question_display");
+const pageBody = document.getElementById("body");
 
-const poll_question = document.getElementById("question");
-const the_option = document.getElementById("option");
-const option_button = document.getElementById("add_option");
-const new_options = document.getElementById("options")
+addOptionBtn.addEventListener("click", () => {
+  // Update question display if input is not empty
+  if (questionInput.value.trim()) {
+    questionDisplay.textContent = questionInput.value;
+  }
 
-option_button.addEventListener("click", () => {
-    console.log("button click");
-    const option = document.createElement("span");
-    option.textContent = the_option.value;
-    the_option.value = "";
-    the_option.placeholder = "";
-    new_options.appendChild(option);
-    new_options.appendChild(document.createElement("br"));
-})
+  // Initialize vote count for this option
+  let voteCount = 0;
+
+  // Create option button and vote count badge elements
+  const optionBtn = document.createElement("button");
+  const voteBadge = document.createElement("span");
+
+  optionBtn.textContent = optionInput.value;
+
+  // Increment vote count on option button click
+  optionBtn.addEventListener("click", () => {
+    voteCount++;
+    voteBadge.textContent = `  ( ${voteCount} )`;
+  });
+
+  // Clear input field and placeholder
+  optionInput.value = "";
+  optionInput.placeholder = "";
+
+  // Append option button, badge, and line break to the page
+  pageBody.appendChild(optionBtn);
+  pageBody.appendChild(voteBadge);
+  pageBody.appendChild(document.createElement("br"));
+});
