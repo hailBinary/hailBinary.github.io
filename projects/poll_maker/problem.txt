@@ -1,0 +1,2 @@
+these are all my problems, 
+1. what is within the event listener js method ("submit", func). like what is submit, what are the other words,what does it mean.

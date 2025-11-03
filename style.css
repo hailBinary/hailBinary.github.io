@@ -9,6 +9,10 @@
   background-color: bisque;
 }
 
+#question,#option{
+  width: 15rem;
+  height: 2rem;
+}
 h3 {
   background-color: rgb(255, 250, 244);
   padding-left: 0.5rem;
