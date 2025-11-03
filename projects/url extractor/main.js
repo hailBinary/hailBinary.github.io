@@ -14,6 +14,8 @@ form.addEventListener("submit", (e) => {
         ? item
         : `https://${item}`;
 
+    url.target = "_blank"; //opens in a new tab
+
     const match = item.match(/https?:\/\/(?:www\.)?(.*?)\.[a-z]+/i);
     url.textContent = match ? match[1] : item.replace(/^www\./, "");
 
