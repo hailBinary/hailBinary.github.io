@@ -1,4 +1,4 @@
-.title {
+.title{
   margin-left: 2rem;
   margin-right: 2rem;
   padding-left: 1rem;
@@ -9,6 +9,11 @@
   background-color: bisque;
 }
 
-.body {
-  background: #faeab1;
+
+h3{
+  background-color: rgb(255, 250, 244);
+  padding-left: 0.5rem;
+}
+p{
+  margin-left: 0.5rem;
 }
