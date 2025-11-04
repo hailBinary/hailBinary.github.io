@@ -43,10 +43,10 @@ p {
 
 /* Project Metadata */
 .project-date {
-  margin-left: 0.4rem;
-  font-size: 0.65rem;
+  margin-left: -2px;
+  font-size: 0.5rem;
   color: rgba(82, 82, 82, 0.3);
-  vertical-align: middle;
+  vertical-align: bottom;
 }
 
 /* Form Inputs */
