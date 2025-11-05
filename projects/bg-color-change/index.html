@@ -5,10 +5,9 @@
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <link rel="stylesheet" href="../../style.css" />
-  <link rel="stylesheet" href="style.css">
   <link rel="shortcut icon" href="../../assets/favicon.svg" type="image/x-icon">
 
-  <title>Pranil Builds - Five Tone</title>
+  <title>Pranil Builds - BGcolorChange</title>
 </head>
 
 <body id="body">
@@ -21,18 +20,15 @@
     </h1>
     <hr>
   </header>
-  <h2 class="centered">Five Tone - Palette Generator</h2>
-  <p class="centered">Click on a color to copy it's hex code to your clipboard.</p>
-  <input type="button" value="Generate Palette" id="color_gen">
-  <div class="row">
-    <div></div>
-    <div></div>
-    <div></div>
-    <div></div>
-    <div></div>
-  </div>
-
-  <script src="main.js"></script>
+  <h2 id="title">BGcolorchange</h2>
+  <form id="submit_form">
+    <textarea name="message" id="main_message" rows="6" cols="30"
+      placeholder="Write the BG color here. Hex code: #a1e2ff  or Red, Blue, Green, Yellow, Black, White."></textarea>
+    <br />
+    <input type="submit" id="submit_btn" />
+  </form>
+  <p id="the_paragraph"></p>
+  <script src="script.js"></script>
 </body>
 
 </html>
